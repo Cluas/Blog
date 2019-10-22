@@ -19,7 +19,7 @@ jsonfield==2.0.2
 Markdown==2.6.9
 oauthlib==2.0.4
 olefile==0.44
-Pillow==4.3.0
+Pillow==6.2.0
 pycparser==2.18
 Pygments==2.2.0
 pyOpenSSL==17.3.0
