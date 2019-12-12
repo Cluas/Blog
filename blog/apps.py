@@ -1,11 +1,12 @@
-from django.apps import AppConfig
 import algoliasearch_django as algoliaserach
+from django.apps import AppConfig
+
 from .index import PostIndex
 
 
 class BlogConfig(AppConfig):
-    name = 'blog'
+    name = "blog"
 
     def ready(self):
-        Post = self.get_model('post')
-        algoliaserach.register(Post, PostIndex)
+        post_model = self.get_model("post")
+        algoliaserach.register(post_model, PostIndex)
